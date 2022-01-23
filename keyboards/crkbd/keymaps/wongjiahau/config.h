@@ -39,11 +39,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
 
-#define TAPPING_TERM 200
-#define PERMISSIVE_HOLD
-#define IGNORE_MOD_TAP_INTERRUPT
-#define COMBO_TERM 30
 #define VIAL_KEYBOARD_UID {0xFF, 0x10, 0xBA, 0x45, 0x13, 0xD1, 0x84, 0x30}
 
 #define VIAL_UNLOCK_COMBO_ROWS { 0, 0 }
 #define VIAL_UNLOCK_COMBO_COLS { 0, 11 }
+
+#define TAPPING_TERM 200
+#define PERMISSIVE_HOLD
+#define IGNORE_MOD_TAP_INTERRUPT
+#define COMBO_TERM 30
+
+// refer https://get.vial.today/docs/firmware-size.html#dynamic-combos
+#define VIAL_COMBO_ENTRIES 32
